@@ -1,0 +1,65 @@
+.Featured {
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 40px;
+  .head {
+    font-size: 40px;
+    padding: 20px 0;
+    font-family: $header-font;
+  }
+  .Featured_Box {
+    .head {
+      font-size: 20px;
+      text-align: left;
+      padding: 10px 0;
+    }
+  }
+  .mixer {
+    margin-top: 50px;
+  }
+  .Mixer_Box_01 {
+    background-color: $blue-color;
+  }
+  .Mixer_Box_02 {
+    background-color: $gold-color;
+  }
+  .Mixer_Box_01,
+  .Mixer_Box_02 {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    padding: 80px 50px;
+  }
+  .Mixer_Box_Text {
+    text-align: left;
+    padding: 50px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+
+    .price {
+      padding: 15px 0;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    .desc {
+      color: rgb(109, 109, 109);
+      padding: 10px 0;
+    }
+    .add {
+      background-color: $blue-color;
+      text-align: center;
+      margin: 20px 0;
+      padding: 10px 0;
+      color: white;
+      cursor: pointer;
+      border: 2px solid $blue-color;
+      transition: 0.2s;
+      &:hover {
+        background-color: transparent;
+        color: $blue-color;
+      }
+    }
+  }
+}

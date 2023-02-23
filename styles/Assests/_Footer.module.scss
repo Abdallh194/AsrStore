@@ -1,0 +1,52 @@
+footer {
+  background-color: $blue-color;
+  color: $gold-color;
+  padding: 20px 0;
+
+  .Foot_Card {
+    margin: 40px 0;
+    margin-bottom: 10px;
+    .head {
+      font-family: $header-font;
+      font-size: 33px;
+      padding: 10px 0;
+      font-weight: bold;
+    }
+    .disc {
+      color: #a1a1a1;
+      width: 80%;
+      font-size: 14px;
+    }
+    .icons {
+      font-size: 20px;
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 65%;
+      margin-top: 12px;
+      a {
+        font-size: 25px;
+        color: white;
+      }
+    }
+  }
+  .details {
+    margin-top: 5px;
+  }
+  .title {
+    font-size: 27px;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+  p {
+    display: block;
+    color: #d8d8d8;
+    font-size: 15px;
+    a {
+      color: #d6d6d6;
+    }
+  }
+  Button {
+    margin: 10px 0;
+  }
+}

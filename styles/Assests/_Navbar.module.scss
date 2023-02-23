@@ -1,0 +1,130 @@
+.Navbar {
+  .TopNavbar {
+    padding-top: 20px;
+  }
+  .nav {
+    background-color: $blue-color;
+    color: white;
+    padding: 10px;
+  }
+  #collasible-nav-dropdown {
+    color: white;
+  }
+  .me-auto {
+    a {
+      padding: 0px 18px;
+      color: white;
+    }
+  }
+  .d-app,
+  .return {
+    padding: 0px 10px;
+    color: white;
+  }
+  .dropdown-menu {
+    padding: 10px;
+    width: 260px;
+    a {
+      margin: 15px 0;
+      display: block;
+    }
+  }
+  .logo {
+    font-size: 30px;
+    font-family: $header-font;
+    color: $gold-color;
+  }
+  .form {
+    .form-control {
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      width: 83%;
+      border-color: $gold-color;
+      font-weight: bold;
+      &::placeholder {
+        color: $gold-color;
+      }
+    }
+    button {
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      background-color: $gold-color;
+      border: none;
+      font-weight: bold;
+    }
+  }
+  .icons {
+    text-align: center;
+    justify-content: center;
+    .box {
+      color: black;
+      margin: 0px 20px;
+    }
+  }
+  @media (max-width: 1300px) {
+    .logo {
+      font-size: 25px;
+    }
+    .icons {
+      .box {
+        margin: 0px 10px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .logo {
+      font-size: 21px;
+    }
+    .icons {
+      .box {
+        margin: 0px 8px;
+        font-size: 13px;
+      }
+    }
+    .me-auto {
+      a {
+        font-size: 14px;
+      }
+    }
+    .return,
+    .d-app {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 992px) {
+    .d-None-MobileView {
+      display: none;
+    }
+    .me-auto {
+      a {
+        margin: 10px 0;
+      }
+    }
+    .return,
+    .d-app {
+      margin: 10px 0;
+    }
+    .logo-Box,
+    .icons-box {
+      width: 40%;
+      margin: auto;
+    }
+    .logo {
+      font-size: 29px;
+    }
+    .icons {
+      .box {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (max-width: 585px) {
+    .logo-Box,
+    .icons-box {
+      width: 50%;
+    }
+    .logo {
+      font-size: 25px;
+    }
+  }
+}

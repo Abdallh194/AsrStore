@@ -1,0 +1,56 @@
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"); //bootstrap-icons
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap"); //header font
+$main-font: "Montserrat", sans-serif;
+$header-font: "Changa", sans-serif;
+$gold-color: #f2c119;
+$blue-color: #183661;
+body {
+  overflow-x: hidden;
+}
+* {
+  font-family: $main-font;
+  font-weight: bold;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+.toCart {
+  position: fixed;
+  font-size: 25px;
+  color: black;
+  left: 5%;
+  bottom: 10%;
+  &::after {
+    content: attr(data-length);
+    position: absolute;
+    left: 3px;
+    top: -2px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: red;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.SelectedCart {
+  border-color: $blue-color !important;
+}
+@import "Assests/Navbar.module";
+@import "Assests/Home.module";
+@import "Assests/Featured.module";
+@import "Assests/Products.module";
+@import "Assests/_NewRes.module";
+@import "Assests/Footer.module";

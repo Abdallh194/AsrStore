@@ -1,0 +1,148 @@
+.homepage {
+  margin-top: 50px;
+  .left_Box,
+  .right_Box {
+    padding: 0;
+  }
+  .left_Box {
+    background-color: $gold-color;
+    padding: 60px 20px;
+    color: $blue-color;
+    .head {
+      font-family: fantasy;
+      font-size: 129px;
+      margin-top: -44px;
+      font-weight: lighter;
+    }
+    .discount {
+      font-size: 68px;
+      font-weight: 700;
+      margin-top: -35px;
+      font-family: $header-font;
+    }
+    .ShopNow {
+      background-color: $blue-color;
+      width: 150px;
+      text-align: center;
+      padding: 10px 0;
+      color: white;
+    }
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+  .right_Box {
+    background-color: $blue-color;
+    color: white;
+    img {
+      width: 100%;
+      padding: 20px;
+    }
+    .Btm_head {
+      text-align: center;
+      font-size: 27px;
+    }
+    .Btm_Box {
+      padding-bottom: 20px;
+      img {
+        width: 52%;
+        display: block;
+        margin: auto;
+      }
+    }
+    .mensAcc {
+      padding: 20px;
+      .head {
+        font-size: 39px;
+        font-family: $header-font;
+      }
+      .ShopNow {
+        background-color: $gold-color;
+        width: 150px;
+        text-align: center;
+        padding: 10px 0;
+        color: $blue-color;
+        margin: 10px 0;
+        font-size: 19px;
+        font-weight: bold;
+      }
+    }
+    .clothes {
+      background-color: $gold-color;
+      border-top-left-radius: 50%;
+    }
+  }
+  @media (max-width: 1200px) {
+    .left_Box {
+      .head {
+        font-size: 86px;
+        margin-top: -8px;
+      }
+      .discount {
+        font-size: 52px;
+        margin-top: 0;
+      }
+    }
+    .right_Box .mensAcc .head {
+      font-size: 32px;
+    }
+  }
+  @media (max-width: 992px) {
+    .left_Box,
+    .right_Box {
+      width: 100%;
+    }
+    .left_Box {
+      .head {
+        font-size: 114px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .left_Box {
+      .head {
+        font-size: 88px;
+      }
+    }
+  }
+  @media (max-width: 585px) {
+    .left_Box {
+      .head {
+        font-size: 75px;
+      }
+      .discount {
+        font-size: 38px;
+      }
+      .ShopNow {
+        margin-top: 20px;
+      }
+    }
+    .right_Box {
+      .Btm_Box {
+        img {
+          width: 80%;
+        }
+        .Btm_head {
+          font-size: 23px;
+        }
+      }
+      .mensAcc {
+        width: 50%;
+        .head {
+          font-size: 20px;
+        }
+        .desc {
+          font-size: 14px;
+          color: #c8c8c8;
+          padding: 5px 0;
+        }
+      }
+      .witchImg {
+        img {
+          height: auto;
+        }
+      }
+    }
+  }
+}
