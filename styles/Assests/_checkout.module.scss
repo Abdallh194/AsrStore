@@ -1,0 +1,76 @@
+.Checkout {
+  padding: 50px 0;
+  .head {
+    font-family: $header-font;
+    font-size: 23px;
+  }
+  #submit {
+    width: 40%;
+    margin: 20px auto;
+    background-color: $blue-color;
+    color: white;
+    padding: 8px 0;
+  }
+  .BiilTitles {
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .BiilDetails {
+    justify-content: space-between;
+    padding: 3px 0;
+  }
+  .pay {
+    background-color: $blue-color;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .inputInfo {
+    input {
+      height: 45px;
+      margin: 10px auto;
+      border-radius: 0;
+      border-color: #aeaeae;
+      &::placeholder {
+        color: $blue-color;
+      }
+    }
+  }
+}
+.ReactModal__Content {
+  height: fit-content !important;
+  width: fit-content !important;
+  position: fixed;
+  margin: 50px auto;
+  background-color: $blue-color !important ;
+  color: white !important;
+  padding: 30px;
+  text-align: center !important;
+  .ModalHead {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .confirm {
+    background-color: $gold-color;
+    text-align: center;
+    width: 110px;
+    padding: 5px 0;
+    margin: 20px auto;
+    color: $blue-color;
+    cursor: pointer;
+  }
+  i {
+    color: $gold-color;
+    font-size: 40px;
+  }
+  @media (max-width: 767px) {
+    top: 50% !important;
+    transform: translatey(-50%);
+    margin: auto;
+    .ModalHead {
+      font-size: 18px;
+    }
+  }
+}

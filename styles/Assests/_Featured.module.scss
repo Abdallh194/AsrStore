@@ -62,4 +62,39 @@
       }
     }
   }
+  @media (max-width: 992px) {
+    .head {
+      font-size: 27px;
+    }
+    .Mixer_Box_01,
+    .Mixer_Box_02 {
+      padding: 0;
+    }
+    .Mixer_Box_Text {
+      padding-right: 10px;
+      .price {
+        padding: 0;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .head {
+      font-size: 36px;
+    }
+    .Mixer_Box_01,
+    .Mixer_Box_02 {
+      justify-content: center;
+      margin: 0;
+      padding: 30px;
+    }
+    .Mixer_Box_Text {
+      padding: 10px;
+    }
+  }
+  @media (max-width: 575px) {
+    .Featured_Box {
+      width: 48%;
+      margin: auto;
+    }
+  }
 }

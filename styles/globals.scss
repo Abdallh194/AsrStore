@@ -48,9 +48,25 @@ h5 {
 .SelectedCart {
   border-color: $blue-color !important;
 }
+.wrong {
+  border-color: red !important;
+  border-width: 3px;
+}
+.true {
+  border-color: #1eff00 !important;
+  border-width: 3px;
+}
+.error {
+  text-align: center;
+  color: red;
+}
 @import "Assests/Navbar.module";
 @import "Assests/Home.module";
 @import "Assests/Featured.module";
 @import "Assests/Products.module";
 @import "Assests/_NewRes.module";
 @import "Assests/Footer.module";
+@import "Assests/Cart.module";
+@import "Assests/checkout.module";
+@import "Assests/Login.module";
+@import "Assests/orders.module";

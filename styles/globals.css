@@ -50,6 +50,21 @@ h5 {
   border-color: #183661 !important;
 }
 
+.wrong {
+  border-color: red !important;
+  border-width: 3px;
+}
+
+.true {
+  border-color: #1eff00 !important;
+  border-width: 3px;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}
+
 .Navbar .TopNavbar {
   padding-top: 20px;
 }
@@ -364,6 +379,41 @@ h5 {
   background-color: transparent;
   color: #183661;
 }
+@media (max-width: 992px) {
+  .Featured .head {
+    font-size: 27px;
+  }
+  .Featured .Mixer_Box_01,
+  .Featured .Mixer_Box_02 {
+    padding: 0;
+  }
+  .Featured .Mixer_Box_Text {
+    padding-right: 10px;
+  }
+  .Featured .Mixer_Box_Text .price {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .Featured .head {
+    font-size: 36px;
+  }
+  .Featured .Mixer_Box_01,
+  .Featured .Mixer_Box_02 {
+    justify-content: center;
+    margin: 0;
+    padding: 30px;
+  }
+  .Featured .Mixer_Box_Text {
+    padding: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .Featured .Featured_Box {
+    width: 48%;
+    margin: auto;
+  }
+}
 
 .Products .head {
   padding: 20px 0;
@@ -403,6 +453,16 @@ h5 {
   display: block;
   margin: auto;
   width: 107px;
+}
+@media (max-width: 992px) {
+  .Products .Product_Details {
+    width: 31%;
+  }
+}
+@media (max-width: 767px) {
+  .Products .Product_Details {
+    width: 48%;
+  }
 }
 
 .NewRes {
@@ -513,4 +573,386 @@ footer p a {
 }
 footer Button {
   margin: 10px 0;
+}
+
+.Cart {
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+.Cart .head {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+  font-family: "Changa", sans-serif;
+  color: red;
+  margin-bottom: 30px;
+}
+.Cart .tocheckout {
+  background-color: #f2c119;
+  display: block;
+  padding: 10px;
+  color: #183661;
+}
+.Cart .noItem {
+  text-align: center;
+  color: red;
+}
+.Cart .coupon .form-control {
+  width: 71%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.Cart .coupon button {
+  font-size: 13px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.Cart .cartTitles {
+  background-color: #f2c119;
+  padding: 10px 0;
+}
+.Cart .BiilTitles {
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.Cart .BiilDetails {
+  justify-content: space-between;
+  padding: 3px 0;
+}
+.Cart .product {
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #183661;
+  color: white;
+}
+.Cart .product img {
+  width: 85px;
+  height: 65px;
+}
+.Cart .product .title {
+  margin-top: 20px;
+}
+.Cart .dlt {
+  color: red;
+  font-size: 21px;
+  cursor: pointer;
+}
+.Cart .LogToCont {
+  background-color: red;
+  color: white;
+  padding: 10px;
+}
+@media (max-width: 992px) {
+  .Cart .CartDetails,
+  .Cart .BillDetails {
+    width: 100%;
+  }
+  .Cart .BillDetails {
+    margin-top: 30px;
+  }
+  .Cart .product img {
+    width: 65px;
+  }
+}
+@media (max-width: 767px) {
+  .Cart .product .title {
+    font-size: 12px;
+  }
+}
+@media (max-width: 585px) {
+  .Cart .cartTitles {
+    font-size: 13px;
+  }
+  .Cart .product img {
+    width: 50px;
+    height: 50px;
+  }
+  .Cart .product .title {
+    font-size: 10px;
+  }
+}
+
+.Checkout {
+  padding: 50px 0;
+}
+.Checkout .head {
+  font-family: "Changa", sans-serif;
+  font-size: 23px;
+}
+.Checkout #submit {
+  width: 40%;
+  margin: 20px auto;
+  background-color: #183661;
+  color: white;
+  padding: 8px 0;
+}
+.Checkout .BiilTitles {
+  justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.Checkout .BiilDetails {
+  justify-content: space-between;
+  padding: 3px 0;
+}
+.Checkout .pay {
+  background-color: #183661;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.Checkout .inputInfo input {
+  height: 45px;
+  margin: 10px auto;
+  border-radius: 0;
+  border-color: #aeaeae;
+}
+.Checkout .inputInfo input::-moz-placeholder {
+  color: #183661;
+}
+.Checkout .inputInfo input::placeholder {
+  color: #183661;
+}
+
+.ReactModal__Content {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  position: fixed;
+  margin: 50px auto;
+  background-color: #183661 !important;
+  color: white !important;
+  padding: 30px;
+  text-align: center !important;
+}
+.ReactModal__Content .ModalHead {
+  font-size: 25px;
+  font-weight: bold;
+}
+.ReactModal__Content .confirm {
+  background-color: #f2c119;
+  text-align: center;
+  width: 110px;
+  padding: 5px 0;
+  margin: 20px auto;
+  color: #183661;
+  cursor: pointer;
+}
+.ReactModal__Content i {
+  color: #f2c119;
+  font-size: 40px;
+}
+@media (max-width: 767px) {
+  .ReactModal__Content {
+    top: 50% !important;
+    transform: translatey(-50%);
+    margin: auto;
+  }
+  .ReactModal__Content .ModalHead {
+    font-size: 18px;
+  }
+}
+
+.LogIn {
+  padding: 50px 0;
+}
+.LogIn .signup {
+  background-color: #f2c119;
+  height: 600px;
+}
+.LogIn .signup .head {
+  font-size: 63px;
+  font-family: "Changa", sans-serif;
+}
+.LogIn .signup .signBtn {
+  background-color: #183661;
+  width: 200px;
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  margin: 15px auto;
+  color: #f2c119;
+  border-radius: 8px;
+}
+.LogIn .signup,
+.LogIn .logdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.LogIn .logdetails {
+  padding: 50px 0;
+  width: 50%;
+  margin: auto;
+}
+.LogIn .logdetails .head {
+  font-size: 70px;
+  font-family: "Changa", sans-serif;
+  font-weight: bold;
+}
+.LogIn .logdetails .socialHead {
+  margin-top: -10px;
+  font-size: 18px;
+}
+.LogIn .logdetails .icons {
+  padding: 10px 0;
+}
+.LogIn .logdetails .icons i {
+  width: 50px;
+  display: inline-block;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 27px;
+  padding-top: 5px;
+  color: white;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.LogIn .logdetails .icons .bi-facebook {
+  background-color: #4267b2;
+}
+.LogIn .logdetails .icons .bi-google {
+  background-color: red;
+}
+.LogIn .logdetails .icons .bi-linkedin {
+  background-color: #005482;
+}
+.LogIn .logdetails .or {
+  padding: 20px 0;
+  position: relative;
+}
+.LogIn .logdetails .or::before, .LogIn .logdetails .or::after {
+  width: 30%;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: rgba(171, 171, 171, 0.4117647059);
+  top: 32px;
+}
+.LogIn .logdetails .or::before {
+  left: 131px;
+}
+.LogIn .logdetails .or::after {
+  right: 131px;
+}
+.LogIn .logdetails form {
+  width: 70%;
+  margin: auto;
+}
+.LogIn .logdetails form .form-control {
+  margin: 10px 0;
+  height: 45px;
+}
+.LogIn .logdetails form #submit {
+  width: 200px;
+  color: #183661;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #f2c119;
+}
+@media (max-width: 1300px) {
+  .LogIn .logdetails {
+    width: 66%;
+  }
+  .LogIn .logdetails .head {
+    font-size: 60px;
+  }
+  .LogIn .logdetails .socialHead {
+    margin-top: 0;
+  }
+}
+@media (max-width: 992px) {
+  .LogIn .logdetails {
+    width: 66%;
+  }
+  .LogIn .logdetails .head {
+    font-size: 46px;
+  }
+  .LogIn .logdetails .or::before {
+    left: 110px;
+  }
+  .LogIn .logdetails .or::after {
+    right: 110px;
+  }
+  .LogIn .signup .head {
+    font-size: 45px;
+  }
+  .LogIn .signup .desc {
+    font-size: 14px;
+    color: #555555;
+  }
+}
+@media (max-width: 767px) {
+  .LogIn .logdetails {
+    width: 100%;
+  }
+}
+
+.orders {
+  padding: 50px 0;
+  text-align: center;
+}
+.orders .header {
+  background-color: #183661;
+  display: flex;
+  margin-top: 25px;
+  color: #f2c119;
+}
+.orders .orderdetails {
+  display: flex;
+  color: #183661;
+  background-color: #f2c119;
+  position: relative;
+}
+.orders .orderdetails .resposivePosision {
+  position: relative;
+  top: 50%;
+  transform: translateY(-25px);
+  font-family: "Changa", sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+  transform: translateY(-10px);
+}
+.orders .dlt {
+  color: red;
+  cursor: pointer;
+}
+.orders .head {
+  font-size: 37px;
+  font-family: "Changa", sans-serif;
+}
+.orders .titles {
+  font-size: 21px;
+  font-family: "Changa", sans-serif;
+  padding: 10px 0;
+}
+.orders .products {
+  font-size: 14px;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .orders .orderdetails .resposivePosision {
+    font-size: 14px;
+  }
+  .orders .titles {
+    font-size: 18px;
+  }
+}
+@media (max-width: 992px) {
+  .orders .orderdetails .resposivePosision {
+    font-size: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .orders .titles {
+    font-size: 12px;
+  }
+  .orders .dlt {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=globals.css.map */

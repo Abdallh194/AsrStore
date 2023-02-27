@@ -11,7 +11,7 @@ const TopNavbar = () => {
     e.preventDefault();
     dispatch(HandleSearchKey(searchkey));
   };
-  let { searchValue } = useSelector((s) => s.ASRStore);
+  let { logstatus, user } = useSelector((state) => state.ASRStore);
   return (
     <div className="TopNavbar">
       <Container>
@@ -37,10 +37,14 @@ const TopNavbar = () => {
           </Col>
           <Col sm={12} md={2} className="icons-box">
             <div className="icons d-flex">
-              <Link href="/" className="box">
-                <i class="bi bi-person-circle"></i>
-                <p>Login</p>
-              </Link>
+              {logstatus ? (
+                <div>hello {user}</div>
+              ) : (
+                <Link href="/login" className="box">
+                  <i class="bi bi-person-circle"></i>
+                  <p>Login</p>
+                </Link>
+              )}
               <Link href="/report" className="box">
                 <i class="bi bi-envelope-exclamation"></i>
                 <p>Report</p>

@@ -42,7 +42,7 @@ function CollapsibleExample() {
             <Link href="#d-app" className="d-app">
               Download App <i class="bi bi-phone-fill"></i>
             </Link>
-            <Link href="#return" className="return">
+            <Link href="/order" className="return">
               Returns & Orders
             </Link>
           </Nav>

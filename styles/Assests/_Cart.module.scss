@@ -1,0 +1,107 @@
+.Cart {
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px;
+  .head {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: $header-font;
+    color: red;
+    margin-bottom: 30px;
+  }
+  .tocheckout {
+    background-color: $gold-color;
+    display: block;
+    padding: 10px;
+    color: $blue-color;
+  }
+  .noItem {
+    text-align: center;
+    color: red;
+  }
+  .coupon {
+    .form-control {
+      width: 71%;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    button {
+      font-size: 13px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+  }
+  .cartTitles {
+    background-color: $gold-color;
+    padding: 10px 0;
+  }
+  .BiilTitles {
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  .BiilDetails {
+    justify-content: space-between;
+    padding: 3px 0;
+  }
+  .product {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: $blue-color;
+    color: white;
+
+    img {
+      width: 85px;
+      height: 65px;
+    }
+    .title {
+      margin-top: 20px;
+    }
+  }
+  .dlt {
+    color: red;
+    font-size: 21px;
+    cursor: pointer;
+  }
+  .LogToCont {
+    background-color: red;
+    color: white;
+    padding: 10px;
+  }
+  @media (max-width: 992px) {
+    .CartDetails,
+    .BillDetails {
+      width: 100%;
+    }
+    .BillDetails {
+      margin-top: 30px;
+    }
+    .product {
+      img {
+        width: 65px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .product {
+      .title {
+        font-size: 12px;
+      }
+    }
+  }
+  @media (max-width: 585px) {
+    .cartTitles {
+      font-size: 13px;
+    }
+    .product {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      .title {
+        font-size: 10px;
+      }
+    }
+  }
+}

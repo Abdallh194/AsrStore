@@ -22,6 +22,14 @@ export const StoreSlice = createSlice({
     error: null,
     products: [],
     cartItems: [],
+    orderItems: [],
+    logstatus: false,
+    user: "",
+    pass: "",
+    email: "",
+    orderDate: "",
+    copyofCartItems: [],
+    address: "",
   },
   reducers: {
     HandleSearchKey: (state, action) => {
@@ -38,6 +46,40 @@ export const StoreSlice = createSlice({
       if (!isexit) {
         state.cartItems.push(action.payload);
       }
+      state.copyofCartItems = state.cartItems;
+    },
+    AddItemsToOrders: (state) => {
+      state.orderItems = [...state.copyofCartItems];
+    },
+    AddressLocation: (state, action) => {
+      state.address = action.payload;
+    },
+    DeleteItemFromCart: (state, action) => {
+      state.cartItems = state.cartItems.filter((p) => p.id !== action.payload);
+      state.orderItems = state.orderItems.filter(
+        (p) => p.id !== action.payload
+      );
+    },
+    DeleteAllItemINCart: (state) => {
+      while (state.cartItems.length > 0) {
+        state.cartItems.pop();
+      }
+    },
+    DeleteAllItemINOrders: (state) => {
+      while (state.orderItems.length > 0) {
+        state.orderItems.pop();
+      }
+    },
+    LogInStatus: (state) => {
+      state.logstatus = true;
+    },
+    ResiterUser: (state, action) => {
+      state.user = action.payload.username;
+      state.pass = action.payload.password;
+      state.email = action.payload.email;
+    },
+    setDate: (state, action) => {
+      state.orderDate = action.payload;
     },
   },
   extraReducers: {
@@ -57,6 +99,17 @@ export const StoreSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { HandleSearchKey, AddItemToCart } = StoreSlice.actions;
+export const {
+  HandleSearchKey,
+  AddItemToCart,
+  DeleteItemFromCart,
+  DeleteAllItemINCart,
+  LogInStatus,
+  ResiterUser,
+  setDate,
+  DeleteAllItemINOrders,
+  AddItemsToOrders,
+  AddressLocation,
+} = StoreSlice.actions;
 
 export default StoreSlice.reducer;

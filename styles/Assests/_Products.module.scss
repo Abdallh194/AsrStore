@@ -38,4 +38,14 @@
       width: 107px;
     }
   }
+  @media (max-width: 992px) {
+    .Product_Details {
+      width: 31%;
+    }
+  }
+  @media (max-width: 767px) {
+    .Product_Details {
+      width: 48%;
+    }
+  }
 }

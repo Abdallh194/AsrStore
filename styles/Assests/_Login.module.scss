@@ -1,0 +1,143 @@
+.LogIn {
+  padding: 50px 0;
+
+  .signup {
+    background-color: $gold-color;
+    height: 600px;
+    .head {
+      font-size: 63px;
+      font-family: $header-font;
+    }
+    .signBtn {
+      background-color: $blue-color;
+      width: 200px;
+      padding: 10px 0;
+      cursor: pointer;
+      text-align: center;
+      margin: 15px auto;
+      color: $gold-color;
+      border-radius: 8px;
+    }
+  }
+  .signup,
+  .logdetails {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .logdetails {
+    padding: 50px 0;
+    width: 50%;
+    margin: auto;
+    .head {
+      font-size: 70px;
+      font-family: $header-font;
+      font-weight: bold;
+    }
+    .socialHead {
+      margin-top: -10px;
+      font-size: 18px;
+    }
+    .icons {
+      padding: 10px 0;
+      i {
+        width: 50px;
+        display: inline-block;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 27px;
+        padding-top: 5px;
+        color: white;
+        margin: 0 10px;
+        cursor: pointer;
+      }
+      .bi-facebook {
+        background-color: #4267b2;
+      }
+      .bi-google {
+        background-color: red;
+      }
+      .bi-linkedin {
+        background-color: #005482;
+      }
+    }
+    .or {
+      padding: 20px 0;
+      position: relative;
+      &::before,
+      &::after {
+        width: 30%;
+        position: absolute;
+        content: "";
+        height: 1px;
+        background-color: #ababab69;
+        top: 32px;
+      }
+      &::before {
+        left: 131px;
+      }
+      &::after {
+        right: 131px;
+      }
+    }
+    form {
+      width: 70%;
+      margin: auto;
+      .form-control {
+        margin: 10px 0;
+        height: 45px;
+      }
+      #submit {
+        width: 200px;
+        color: $blue-color;
+        margin: auto;
+        margin-top: 20px;
+        background-color: $gold-color;
+      }
+    }
+  }
+  @media (max-width: 1300px) {
+    .logdetails {
+      width: 66%;
+      .head {
+        font-size: 60px;
+      }
+      .socialHead {
+        margin-top: 0;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .logdetails {
+      width: 66%;
+      .head {
+        font-size: 46px;
+      }
+
+      .or {
+        &::before {
+          left: 110px;
+        }
+        &::after {
+          right: 110px;
+        }
+      }
+    }
+    .signup {
+      .head {
+        font-size: 45px;
+      }
+      .desc {
+        font-size: 14px;
+        color: #555555;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .logdetails {
+      width: 100%;
+    }
+  }
+}

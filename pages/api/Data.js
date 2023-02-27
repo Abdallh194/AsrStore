@@ -56,7 +56,7 @@ export const AllProducts = [
   {
     id: "7",
     images: "/img/product_07.png",
-    title: " Red polo shirt",
+    title: "polo shirt",
     price: 100,
     category: "Fashion and Accessories",
     Quantity: 1,
