@@ -109,22 +109,35 @@
   @media (max-width: 585px) {
     .left_Box {
       .head {
-        font-size: 75px;
+        font-size: 62px;
       }
       .discount {
-        font-size: 38px;
+        font-size: 34px;
       }
       .ShopNow {
         margin-top: 20px;
       }
     }
+
     .right_Box {
-      .Btm_Box {
+      .clothes {
+        color: $blue-color;
+      }
+      .witchImg {
         img {
-          width: 80%;
+          padding: 0;
+        }
+      }
+      .Btm_Box {
+        position: relative;
+        img {
+          width: 230px;
+          height: 204px;
         }
         .Btm_head {
-          font-size: 23px;
+          position: relative;
+          bottom: 0;
+          font-size: 20px;
         }
       }
       .mensAcc {

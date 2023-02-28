@@ -136,8 +136,25 @@
     }
   }
   @media (max-width: 767px) {
+    .row {
+      margin: 0;
+    }
     .logdetails {
       width: 100%;
+      .head {
+        font-size: 40px;
+        padding: 15px 0;
+      }
+      .or {
+        &::before {
+          left: 60px;
+          top: 34px;
+        }
+        &::after {
+          right: 60px;
+          top: 34px;
+        }
+      }
     }
   }
 }

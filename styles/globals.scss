@@ -12,10 +12,11 @@ body {
 * {
   font-family: $main-font;
   font-weight: bold;
+  text-decoration: none !important;
 }
 a {
   display: inline-block;
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
 }
 h1,
