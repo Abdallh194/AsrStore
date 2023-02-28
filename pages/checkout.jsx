@@ -363,7 +363,7 @@ function Checkout() {
                     Now
                   </div>
                   <div className="ModalHead">
-                    Please review <Link href="/order">Orders Section</Link>
+                    Please review Orders Section
                   </div>
                   <div className="confirm" onClick={ConfirmModal}>
                     Confirm
