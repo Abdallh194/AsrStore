@@ -109,8 +109,9 @@
   @media (max-width: 585px) {
     .left_Box {
       .head {
-        font-size: 62px;
+        font-size: 48px;
         font-family: $main-font;
+        font-weight: bold;
       }
       .discount {
         font-size: 34px;
@@ -127,6 +128,8 @@
       .witchImg {
         img {
           padding: 0;
+          width: 225px;
+          height: 210px;
         }
       }
       .Btm_Box {
@@ -150,11 +153,6 @@
           font-size: 14px;
           color: #c8c8c8;
           padding: 5px 0;
-        }
-      }
-      .witchImg {
-        img {
-          height: auto;
         }
       }
     }

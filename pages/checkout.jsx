@@ -362,7 +362,9 @@ function Checkout() {
                     Your order will then be delivered to you After 3 days From
                     Now
                   </div>
-                  <div className="ModalHead">Please review Orders Section</div>
+                  <div className="ModalHead">
+                    Please review <Link href="/order">Orders Section</Link>
+                  </div>
                   <div className="confirm" onClick={ConfirmModal}>
                     Confirm
                   </div>
