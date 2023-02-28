@@ -358,7 +358,11 @@ function Checkout() {
                     <hr />
                   </div>
                   <div className="ModalHead">ordered in {fullDate}</div>
-                  <div className="ModalHead">After 3 days From Now</div>
+                  <div className="ModalHead">
+                    Your order will then be delivered to you After 3 days From
+                    Now
+                  </div>
+                  <div className="ModalHead">Please review Orders Section</div>
                   <div className="confirm" onClick={ConfirmModal}>
                     Confirm
                   </div>

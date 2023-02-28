@@ -293,6 +293,7 @@ h5 {
 @media (max-width: 585px) {
   .homepage .left_Box .head {
     font-size: 62px;
+    font-family: "Montserrat", sans-serif;
   }
   .homepage .left_Box .discount {
     font-size: 34px;

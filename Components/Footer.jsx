@@ -8,9 +8,9 @@ const Footer = () => {
       <Container>
         <Row>
           <Col sm={12} md={3} className="Foot_Card">
-            <div className="head">Abo Shehap</div>
+            <div className="head">ASR STORE</div>
             <div className="disc">
-              The largest and largest store in the Middle East Now Abu Shehab is
+              The largest and largest store in the Middle East Now ASR STORE is
               looking for your convenience, you will simply buy anything you
               want and it will be delivered to your doorstep on the same day...!
             </div>
